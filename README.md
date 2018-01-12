@@ -1,4 +1,3 @@
-# Everyday progress on python
 
 # Everyday progress on python
 **Python installation**
@@ -42,10 +41,28 @@
  - List instance stores sequence of objects similar to array,create lists using [] . eg colors = ['red','yellow','black']
  - list() constructor produces empty list,by passing iterable objects like *string,tuple,list or dict* we can produce new list. eg: list('hello') gives ['h','e','l','l','o']
 
+----------
+
+ - Tuple is immutable version of sequence.(I think all immutable versions are more streamlined then mutable versions,so whenever possible use immutable version)
+ - Tuple is created using (),  when creating a tuple with single instance make sure you use comma. eg: (17,) is correct (17) is not a tuple
+
+
+----------
+
+ - Python string is indexed sequence of characters, it is immutable. Can be enclosed in single or double quotes.
+
+----------
+
+ - Python set is a collection of elements , without duplicates and without any order.
+ - Hence sets are most efficient to find whether an element is present or not
+ - sets are based on concept of hashtables, drawbacks of sets are that elements are not ordered and only immutable objects can be added. For example we can create set of tuples but cannot create set of sets or set of lists.
+ - set is created using {} eg: {'1','2'}. exception is {} doesnt create empty lists. Instead constructor set() creates empty set. similar to lists when iterable parameter is passed to constructor it creates set of **distinct** elements. eg set('hello') produces {'h','e','l','o'}.
+
+
+----------
+
+ - Python dict is a mapping of distinct keys to associated values.{} represents an empty dictionary. eg : {'andhra':'telugu','kerala':'malyalam'}
+ - 
+
  
-
-
-
- 
-
 
