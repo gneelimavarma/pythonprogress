@@ -1,5 +1,5 @@
 
-# Everyday progress on python
+# Python basics 
 **Python installation**
 
  1. Download python for 64 bit machine and set path variable (right click on my computer-->go to properties, add 'C:/Python36' to PATH variable)
