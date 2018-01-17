@@ -87,9 +87,9 @@
 list1 = [1,2,3]
 def infoPassing(data):
     data.append(8)
-    print('fourth elemnt in formal params %d',data[3]);
-    print('fourth elemnt in actual params %d',list1[3]);
-infoPassing(list1)
+    print('fourth elemnt in formal params',data[3])
+    print('fourth elemnt in actual params',list1[3])
+infoPassing(list1);
 ```
 - The above snippet is an example of information passing and also how aliases work. Here when append is applied it affects the actual parameter too because list1 and data are aliases.
 
