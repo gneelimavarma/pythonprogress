@@ -62,7 +62,43 @@
 ----------
 
  - Python dict is a mapping of distinct keys to associated values.{} represents an empty dictionary. eg : {'andhra':'telugu','kerala':'malyalam'}
- - 
+  ## Functions
+ 
+ - Functions are stateless, they are invoked without any context of a class or instance of a class. eg: sort(data). Methods are used to describe a member function,hence invoked on specific object. eg: data.sort().
+ -  Following is an example of python function, note *def* is used start the definition of a function. Note that there is no need to mention the type of arguments passed or type of return values.
+
+ ```python
+ def findCountOfTarget(data,target):
+    for val in data:
+        if val == target:
+            print('found target')
+            return
+        
+    print('Did not find target')
+```
+- When a function is called python creates a ***activation record*** that stores all the relevant data,this record includes *namespace * to manage all identifiers that have local scope.Namespace include function parameters and all the identifiers that are defined locally.
+## Information Passing
+
+ - Formal parameters - Arguments used in function signature
+ - Actual Parameters - Once passed in the function call
+ - Parameters passed are assigned to formal parameters using *assignment statement*, this assignment makes actual and formal parameters aliases.
+ - This makes information passing very efficient because parameters are not copied.
+```Python
+list1 = [1,2,3]
+def infoPassing(data):
+    data.append(8)
+    print('fourth elemnt in formal params %d',data[3]);
+    print('fourth elemnt in actual params %d',data[3]);
+infoPassing(list1)
+```
+- The above snippet is an example of information passing and also how aliases work. Here when append is applied it affects the actual parameter too because list1 and data are aliases.
+
+
+
+
+
+ 
+ 
 
  
 
