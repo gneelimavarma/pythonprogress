@@ -137,6 +137,38 @@ print(result)
 
 Above code prints [1,9,25]
 ```
+## Packing & Unpacking Sequences
+
+ - If a function has a return function like this
+```python
+return x,y
+```
+It will be returning a tuple in the form (x,y) hence making it a single object.This behaviour is called *automatic packing* 
+- Eg. of *Unpacking*
+```python
+x,y,z = range(7,10)
+
+This assigns x=7,y=8,z=9
+```
+- Unpacking can be used to assign tuples returned by a function like this
+```python
+quotient,remainder = divmod(4,3)
+
+divmod generally returns tuple in form (a//b,a%b)
+```
+## Modules & import
+
+ - There are two ways of using a function that is defined in a module.
+```python
+from math import pi,sqrt
+
+##The above statement includes the definition of pi and sqrt in the current namespace, hence they can be used directly
+
+import math
+ 
+##This creates an identifier 'math' in the current namespace hence methods can be accessed using dot notation
+math.sqrt(6)
+```
 
 
 
