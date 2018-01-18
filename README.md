@@ -92,6 +92,57 @@ def infoPassing(data):
 infoPassing(list1);
 ```
 - The above snippet is an example of information passing and also how aliases work. Here when append is applied it affects the actual parameter too because list1 and data are aliases.
+## Conditional expression
+
+ - Expressed as exp1 if condition else expr2 .
+ ```Python
+ if n>0:
+     param = n
+ else:
+     param = -n
+```
+The above if else condition can be represented as 
+```Python
+n = int(input('enter a number ,positive or negative '))
+param='positive' if n>0 else 'negative'
+print('you entered %s number'% param )
+```
+## Comprehension syntax
+
+ - A common programming task is to produce a series of output after manipulation existing series.we generally use **list comprehension**, For example
+ ```Python
+  result = []
+      for value in iterable: 
+          if condition:
+              result.append(expression)
+```
+- The above can be represented in **comprehension syntax** as
+```Python
+[expression for value in iterable if condition]
+```
+- So to create a list of squares we can simply write
+```python
+numbers = [1,2,3,4,5]
+result = [n*n for n in numbers]
+print(result)
+
+Above code prints [1,4,9,16,25]
+
+```
+- To create a list of squares of odd numbers
+```Python
+numbers = [1,2,3,4,5]
+result = [k*k for k in numbers if k%2 != 0]
+print(result)
+
+Above code prints [1,9,25]
+```
+
+
+
+
+
+
 
 
 
