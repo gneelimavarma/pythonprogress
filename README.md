@@ -48,8 +48,27 @@
 
 
 ----------
-
+**String**
  - Python string is indexed sequence of characters, it is immutable. Can be enclosed in single or double quotes.
+ - A str containing numbers can be converted into an integer using int('123')
+ ```Python
+ name = input('Enter name:')
+ ```
+ - input always gives a string output, it can be converted to float or int before using
+ - Index value for a string starts with zero, characters in a string can be accesses like this , name[5]
+ - Built in function **len** gives length of a string
+ - **String Slicing**: name[2:6] ##slices string from index 2 to 6 but not including 6
+                       name[:4] slices from begining upto 3
+		       name[2:] slices from 2 to end
+ - '+' operator is used to concatenate string
+ - 'in' is used to check if a character exists in a string eg:
+    ```Python
+    if 'c' in somestring:
+        perform...
+    ```
+ - name.lower() : converts to lowercase
+ - name.upper() : converts to uppercase
+ - 
 
 ----------
 
