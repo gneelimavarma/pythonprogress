@@ -68,7 +68,15 @@
     ```
  - name.lower() : converts to lowercase
  - name.upper() : converts to uppercase
- - 
+ - find() is used to search for substring in a string
+ ```Python
+ mystr = 'banana'
+ mystr.find('na')
+ ```
+ If found it returns the position of substring
+ - To strip white space mystr.rstrip() and mystr.lstrip() are used for left and right resp.
+ - startwith('ba') is used to find prefix
+ 
 
 ----------
 
